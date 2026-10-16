@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./auth.css";
 
-const API_URL = "http://localhost:3002";
+const API_URL =
+  process.env.REACT_APP_API_URL || "http://localhost:3002";
 const DASHBOARD_URL = "http://localhost:3001";
 
 export default function AuthForm({ mode = "login" }) {
